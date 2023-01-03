@@ -24,7 +24,6 @@ function App() {
       .get(URL)
       .then((res) => setDimension(res.data))
       .catch((err) => console.log(err));
-    console.log(Dimension);
   }, [TextSearch]);
 
   const handleSubmit = (searchtext) => {

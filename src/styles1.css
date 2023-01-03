@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 /*---------------------LOADING SCREEN----------------------------------------*/
@@ -34,19 +35,19 @@
   font-weight: 600;
   margin: 10px;
 }
-.nav-container h1 span{
+.nav-container h1 span {
   color: #20bf6b;
 }
 
 .nav-container img {
-  width: 240px;
-  height: 240px;
-  place-items: center;
+  width: 20rem;
+  height: 20rem;
+  place-self: center;
 }
 
 .form-container {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   display: flex;
   align-items: center;
 }
@@ -56,41 +57,32 @@ form {
 }
 form h3 {
   color: #fff;
-  font-size: 17px;
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-bottom: 1rem;
 }
 
 form input {
   color: #fff;
-  font-size: 16px;
-  width: 170px;
-  height: 32px;
-  padding: 5px;
+  font-size: 1rem;
+  width: 10rem;
+  height: 2rem;
+  padding: 0.2rem;
   background: none;
-  border: solid 1px #fff;
-  border-radius: 10px;
-  margin: 5px;
-}
-form input:hover {
-  background: rgba(255, 255, 255, 0.6);
-  transition: 1s;
-  color: #000;
+  border: solid 2px #fff;
+  border-radius: 1rem;
+  margin: 1rem;
 }
 
 form button {
   color: #fff;
-  width: 90px;
-  height: 40px;
+  width: 5rem;
+  height: 4rem;
   margin: 10px;
   border: solid 1px #fff;
-  padding: 4px;
-  border-radius: 40px;
+  padding: 1rem;
+  border-radius: 3rem;
   background: transparent;
-  background-size: 100%;
-}
-form button:hover {
-  color: #000;
-  background-color: rgba(255, 255, 255, 0.6);
-  transition: 0.8s;
 }
 
 /*-------------------------------------DIMENSION INFO-------------------------------------------*/
@@ -102,84 +94,123 @@ form button:hover {
 
 .Location h1 {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 12px;
-  margin-top: 15px;
+  font-size: 1.2rem;
+  margin-top: 1rem;
 }
 
-.Location-container__name{
-  color: #fff;
+.Location-container__name {
+  color: #fcfcfc;
   display: grid;
   place-items: center;
 }
 
 .Location-container__name h2 {
-  color: rgb(255, 255, 255);
-  margin: 20px;
-  font-size: 30px;
+  color: #fcfcfc;
+  margin: 2rem;
+  font-size: 3rem;
+  font-weight: 200;
 }
 
 .Location-container__name li {
   display: inline;
-  padding-left: 3px;
-  padding-right: 3px;
-  margin: 70px;
-  font-size: 14px;
-  font-weight: 400;
+  margin: 4rem;
+  font-size: 1.3rem;
+  font-weight: 300;
   list-style: none;
 }
 
 .Location-container__name span {
   color: #20bf6b;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 /*---------------------------------IMAGES AND INFO--------------------------------------*/
 
 .card {
-  padding: 10px;
-  padding-top: 20px;
-  margin: 10px;
-  background-color: rgba(0, 0, 0, 0.7);
-  border: solid 1px #fff;
-  width: 220px;
-  height: 340px;
+  padding: 1rem;
+  margin: 4rem;
+  border-radius: 3rem;
+  background: #202022;
+  box-shadow: inset 41px 41px 82px #1b1b1d, inset -41px -41px 82px #252527;
+  width: auto;
+  height: auto;
+  max-width: 16rem;
   display: grid;
   place-items: center;
 }
 
 .card img {
-  margin-top: 5px;
-  width: 85%;
-  height: 180px;
-  border-radius: 10px;
+  margin-top: 0.2rem;
+  width: 13rem;
+  height: auto;
 }
 
 .card h1 {
   color: #fff;
-  padding: 10px;
   text-align: center;
-  font-size: 18px;
-  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 200;
   text-transform: uppercase;
-  margin-top: 2px;
+  margin-top: 2rem;
 }
 
 .card ul li {
   color: #fff;
   padding: 10px;
-  text-align: left;
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: capitalize;
   list-style-type: none;
+  margin-top: .2rem;
 }
 .card ul li span {
   color: #20bf6b;
   padding: 10px;
   text-align: left;
-  font-size: 14px;
-  font-weight: 800;
+  font-size: 1rem;
+  font-weight: 600;
   text-transform: uppercase;
+}
+.Status_Container {
+  background: #202022;
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 4rem;
+}
+.Status_Text {
+  color: #fcfcfc;
+  font-size: 1.4rem;
+}
+.circle {
+  display: grid;
+  place-content: center;
+  place-self: center;
+  color: #fff;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 1rem;
+  height: 1rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: #fcfcfc;
+  margin-right: .2rem;
+}
+
+.Alive{
+  background-color: #20bf6b;
+}
+.Dead{
+  background-color: #b94343;
+}
+.unknown{
+  background-color: #585858;
 }
 
 /*----------------------MEDIA----------------------------*/
@@ -200,13 +231,13 @@ form button:hover {
     color: #fff;
     font-size: 22px;
   }
-  
+
   form input {
     font-size: 22px;
     width: 180px;
     height: 42px;
   }
-  
+
   form button {
     font-size: 20px;
     width: 120px;
@@ -225,20 +256,11 @@ form button:hover {
     margin: 20px;
     font-size: 20px;
   }
-  .card {
-    width: 420px;
-    height: 580px;
-  }
-  .card img {
-    width: 95%;
-    height: 320px;
-    border-radius: 10px;
-  }
-  
+
   .card h1 {
     font-size: 32px;
   }
-  
+
   .card ul li {
     margin-left: 10px;
     font-size: 22px;
@@ -248,113 +270,106 @@ form button:hover {
   }
 }
 
-
 @media (max-width: 425px) {
-    .nav-container h1 {
-      color: #fff;
-      font-size: 50px;
-      font-weight: 600;
-      margin: 10px;
-    }
-    .nav-container img {
-      width: 340px;
-      height: 340px;
-      place-items: center;
-    }
-    form h3 {   
-      color: #fff;
-      font-size: 22px;
-    }
-    
-    form input {
-      font-size: 22px;
-      width: 180px;
-      height: 42px;
-    }
-    
-    form button {
-      font-size: 20px;
-      width: 120px;
-      height: 50px;
-      margin: 2px;
-      margin-top: 15px;
-    }
-    .Location h1 {
-      font-size: 20px;
-    }
-    .Location-container h2 {
-      color: rgb(255, 255, 255);
-      font-size: 28px;
-      margin-top: 2px;
-    }
-    .Location-container li {
-      font-size: 13px;
-    }
-    .card {
-      width: 320px;
-      height: 450px;
-    }
-    .card img {
-      width: 80%;
-      height: 300px;
-      border-radius: 10px;
-    }
-    
-    .card h1 {
-      font-size: 20px;
-    }
-    
-    .card ul li {
-      font-size: 14px;
-      margin-top: -5px
-    }
-    .card ul li span {
-      font-size: 16px;
-    }
+  .nav-container h1 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    margin: 10px;
+  }
+  .nav-container img {
+    width: 340px;
+    height: 340px;
+    place-items: center;
+  }
+  form h3 {
+    color: #fff;
+    font-size: 22px;
   }
 
-  @media (max-width: 375px){
-    .Location-container ul{
-      display: grid;
-      grid-template-rows: auto auto auto;
-    }
-    .Location-container ul li {
-      margin: 8px;
-      font-size: 16px;
-    }
-    .card {
-      width: 220px;
-      height: 380px;
-      display: grid;
-      place-content: center;
-    }
-    .card img {
-      width: 80%;
-      height: 210px;
-      border-radius: 10px;
-    }
-    
-    .card h1 {
-      font-size: 18px;
-    }
-    
-    .card ul li {
-      margin-left: 10px;
-      font-size: 16px;
-    }
-    .card ul li span {
-      font-size: 16px;
-      color: #20bf6b;
-    }
+  form input {
+    font-size: 22px;
+    width: 180px;
+    height: 42px;
+  }
+
+  form button {
+    font-size: 20px;
+    width: 120px;
+    height: 50px;
+    margin: 2px;
+    margin-top: 15px;
+  }
+  .Location h1 {
+    font-size: 20px;
+  }
+  .Location-container h2 {
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    margin-top: 2px;
+  }
+  .Location-container li {
+    font-size: 1rem;
+  }
+  .Location-container ul li {
+    display: flex;
+  }
+
+  .card img {
+    width: 80%;
+    height: 300px;
+    border-radius: 10px;
+  }
+
+  .card h1 {
+    font-size: 20px;
+  }
+
+  .card ul li {
+    font-size: 14px;
+    margin-top: -5px;
+  }
+  .card ul li span {
+    font-size: 16px;
+  }
 }
 
-@media (max-width: 390px){
+@media (max-width: 375px) {
+  .Location-container ul {
+    display: grid;
+    grid-template-rows: auto auto auto;
+  }
+  .Location-container ul li {
+    margin: 8px;
+    font-size: 16px;
+  }
+  .card img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .card h1 {
+    font-size: 18px;
+  }
+
+  .card ul li {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+  .card ul li span {
+    font-size: 16px;
+    color: #20bf6b;
+  }
+}
+
+@media (max-width: 390px) {
   .Location-container li {
     margin: 4px;
     font-size: 16px;
   }
 }
-@media (max-width: 320px){
+@media (max-width: 320px) {
   .nav-container h1 {
     color: #fff;
     font-size: 40px;
@@ -366,7 +381,7 @@ form button:hover {
     height: 240px;
     place-items: center;
   }
-  .Location-container ul{
+  .Location-container ul {
     display: grid;
     grid-template-rows: auto auto auto;
   }
@@ -376,9 +391,7 @@ form button:hover {
   }
 }
 
-
-
-@media (min-width: 2560px){
+@media (min-width: 2560px) {
   .nav-container h1 {
     color: #fff;
     font-size: 130px;
@@ -394,13 +407,13 @@ form button:hover {
     color: #fff;
     font-size: 32px;
   }
-  
+
   form input {
     font-size: 42px;
     width: 380px;
     height: 90px;
   }
-  
+
   form button {
     font-size: 40px;
     width: 220px;
@@ -432,11 +445,11 @@ form button:hover {
     height: 420px;
     border-radius: 10px;
   }
-  
+
   .card h1 {
     font-size: 40px;
   }
-  
+
   .card ul li {
     margin-left: 10px;
     font-size: 30px;

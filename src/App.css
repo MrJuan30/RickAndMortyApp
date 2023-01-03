@@ -9,6 +9,7 @@
   display: grid;
   place-content: center;
   grid-template-columns: auto auto auto auto;
+  padding-top: 3rem;
 }
 .Nav-container {
   background: url("./background.png");
@@ -25,9 +26,12 @@
 .Location-container {
   background: linear-gradient(to top, #191919, #352236);
   width: 100%;
-  height: 150px;
+  height: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   display: grid;
   place-content: center;
+  place-items: center;
 }
 
 .error {

@@ -17,15 +17,18 @@ const ActorCard = ({ chacurl }) => {
       {
         <div className="container">
           <div className="card">
+            <div className='Status_Container'>
+              <div className={`circle ${Character?.status}`}></div>
+              <p className='Status_Text'>{`${Character?.status}`}</p>
+            </div>
             <img src={`${Character?.image}`} alt="" />
             <h1>{`${Character?.name}`}</h1>
             <ul>
-                <li><span>Status:</span>{`${Character?.status}`}</li>
-                <li><span>Origin:</span>{`${Character?.origin.name}`}</li>
-                <li><span>Appearances:</span>{`${Character?.episode.length}`}</li>
+              <li><span>Origin:</span> <br />{`${Character?.origin.name}`}</li>
+              <li><span>Appearances:</span> <br />{`${Character?.episode.length}`}</li>
             </ul>
           </div>
-        </div> 
+        </div>
       }
     </article>
   );
